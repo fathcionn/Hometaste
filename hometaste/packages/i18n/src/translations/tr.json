@@ -1,0 +1,220 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "browse": "Aşçıları Keşfet",
+    "orders": "Siparişlerim",
+    "messages": "Mesajlar",
+    "favorites": "Favoriler",
+    "becomeCook": "Aşçı Ol",
+    "settings": "Ayarlar",
+    "help": "Yardım"
+  },
+  "hero": {
+    "title": "Evin tadını bul",
+    "subtitle": "Kendi ülkenden ev aşçılarının hazırladığı gerçek yemekler",
+    "searchPlaceholder": "Bugün ne yemek istiyorsun?",
+    "cta": "Yemekleri Keşfet"
+  },
+  "auth": {
+    "loginTitle": "Tekrar Hoş Geldiniz",
+    "signupTitle": "Hesap Oluştur",
+    "email": "E-posta adresi",
+    "password": "Şifre",
+    "name": "Ad Soyad"
+  },
+  "btn": {
+    "viewProfile": "Profili Gör",
+    "orderNow": "Sipariş Ver",
+    "placeOrder": "Siparişi Onayla"
+  },
+  "chat": {
+    "title": "Mesajlar",
+    "placeholder": "Mesaj yazın...",
+    "online": "Çevrimiçi",
+    "offline": "Çevrimdışı",
+    "quick1": "Şu an müsait misiniz?",
+    "quick2": "Ne kadar sürer?",
+    "quick3": "Daha az acılı yapabilir misiniz?",
+    "quick4": "Kapıdayım",
+    "quick5": "Teşekkürler!"
+  },
+  "welcome": {
+    "title": "HomeTaste'e Hoş Geldiniz",
+    "subtitle": "Önce bize nerede olduğunuzu söyleyin",
+    "countryPrompt": "Şu an hangi ülkedesiniz?",
+    "cityPrompt": "Hangi şehirdesiniz?",
+    "cuisinePrompt": "Bugün hangi mutfağı istiyorsunuz?",
+    "cta": "Yemeğimi Bul",
+    "skip": "Tümüne Göz At"
+  },
+  "become": {
+    "title": "HomeTaste'de Aşçı Ol"
+  },
+  "dish": {
+    "addToCart": "Sepete Ekle",
+    "ingredients": "Malzemeler",
+    "spiceLevel": "Acı Seviyesi",
+    "prepTime": "Hazırlık Süresi",
+    "sauces": "Mevcut Soslar",
+    "drinks": "Mevcut İçecekler",
+    "verifiedPhoto": "Canlı Doğrulanmış Fotoğraf",
+    "verified": "Doğrulanmış",
+    "instructions": "Özel Talimatlar",
+    "instructionsPlaceholder": "Özel istekleriniz var mı?"
+  },
+  "cart": {
+    "title": "Sepetim",
+    "empty": "Sepetiniz boş",
+    "subtotal": "Ara Toplam",
+    "deliveryFee": "Teslimat Ücreti",
+    "serviceFee": "Hizmet Ücreti",
+    "total": "Toplam",
+    "checkout": "Ödemeye Geç",
+    "promo": "Promosyon kodu"
+  },
+  "checkout": {
+    "title": "Siparişi Tamamla",
+    "address": "Teslimat Adresi",
+    "payment": "Ödeme Yöntemi",
+    "note": "Aşçıya Not",
+    "notePlaceholder": "Özel istekleriniz var mı?"
+  },
+  "order": {
+    "requestRefund": "?ade Talep Et",
+    "tracking": {
+      "placed": "Sipariş Alındı",
+      "accepted": "Aşçı Kabul Etti",
+      "preparing": "Hazırlanıyor",
+      "ready": "Teslimata Hazır",
+      "courier": "Kurye Atandı",
+      "pickedUp": "Kurye Teslim Aldı",
+      "onTheWay": "Yolda",
+      "delivered": "Teslim Edildi"
+    }
+  },
+  "cook": {
+    "orders": "Sipariş",
+    "rating": "Puan",
+    "prepTime": "Hazırlık Süresi",
+    "availability": "Müsait",
+    "verified": "Doğrulanmış",
+    "responseTime": "Yanıt Süresi",
+    "repeatCustomers": "Tekrar Müşteri",
+    "specialties": "Uzmanlıklar",
+    "gallery": "Yemek Galerisi",
+    "menu": "Menü",
+    "reviews": "Değerlendirmeler"
+  },
+  "rating": {
+    "food": "Yemek Kalitesi",
+    "speed": "Hız",
+    "packaging": "Ambalaj",
+    "communication": "İletişim"
+  },
+  "form": {
+    "fullName": "Ad Soyad",
+    "email": "E-posta",
+    "phone": "Telefon Numarası",
+    "countryOrigin": "Memleketin",
+    "city": "Yaşadığın Şehir",
+    "bio": "Hakkında",
+    "bioPlaceholder": "Kendini ve mutfağını anlat...",
+    "dishes": "Hangi yemekleri yapıyorsunuz?",
+    "availability": "Uygun Saatler",
+    "prepTime": "Ortalama Hazırlık Süresi",
+    "photo": "Profil Fotoğrafı",
+    "submitCook": "Hemen Aşçı Olmaya Başla"
+  },
+  "photo": {
+    "camera": "Fotoğraf Çek (Doğrulanmış)",
+    "gallery": "Galeriden Yükle",
+    "verifiedHint": "Kamerayla çekilen fotoğraflar Doğrulanmış rozeti alır"
+  },
+  "toast": {
+    "addedCart": "Sepete eklendi!",
+    "removedCart": "Sepetten çıkarıldı",
+    "orderPlaced": "Siparişiniz başarıyla alındı!",
+    "saved": "Başarıyla kaydedildi",
+    "error": "Bir şeyler yanlış gitti",
+    "favoriteAdded": "Favorilere eklendi",
+    "favoriteRemoved": "Favorilerden çıkarıldı"
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "noResults": "Sonuç bulunamadı",
+    "min": "dk",
+    "reviews": "değerlendirme"
+  },
+  "home": {
+    "featuredCooks": "Öne Çıkan Aşçılar",
+    "popularDishes": "Popüler Yemekler",
+    "recentlyViewed": "Son Görüntülenenler",
+    "nearbyCooks": "Yakındaki Aşçılar",
+    "seeAll": "Tümünü Gör",
+    "searchPlaceholder": "Bugün ne yemek istiyorsun?",
+    "goodMorning": "Günaydın",
+    "goodAfternoon": "İyi günler",
+    "goodEvening": "İyi akşamlar"
+  },
+  "browse": {
+    "dishes": "Yemekler",
+    "cooks": "Aşçılar",
+    "filters": "Filtreler",
+    "resetFilters": "Tümünü sıfırla",
+    "applyFilters": "Filtreleri Uygula",
+    "activeFilters": "{{count}} filtre aktif",
+    "sortBy": "Sırala",
+    "cuisine": "Mutfak",
+    "priceRange": "Fiyat Aralığı",
+    "minRating": "Minimum Puan",
+    "maxPrepTime": "Maks. Hazırlık Süresi",
+    "availableNow": "Şimdi Müsait",
+    "halalOnly": "Yalnızca Helal",
+    "vegan": "Vegan",
+    "spicy": "Acılı",
+    "prepTimeMin": "{{count}} dk"
+  },
+  "empty": {
+    "dishesTitle": "Henüz yemek yok",
+    "dishesSubtitle": "Yeni ilanlar için yakında tekrar bakın",
+    "cooksTitle": "Aşçı bulunamadı",
+    "cooksSubtitle": "Filtreleri değiştirmeyi deneyin",
+    "searchTitle": "Sonuç bulunamadı",
+    "searchSubtitle": "Farklı kelime veya filtreler deneyin",
+    "clearSearch": "Aramayı temizle"
+  },
+  "refund": {
+    "title": "?ade Talep Et",
+    "subtitle": "Neyin yanl?? gitti?ini anlat?n",
+    "reason": {
+      "notDelivered": "Sipari? teslim edilmedi",
+      "wrongItems": "Yanl?? ?r?nler ald?m",
+      "foodQuality": "Yemek kalitesi sorunu",
+      "cookCancelled": "A??? sipari?imi iptal etti",
+      "other": "Di?er neden"
+    },
+    "descriptionPlaceholder": "L?tfen sorunu ayr?nt?l? a??klay?n",
+    "submit": "?ade Talebini G?nder",
+    "policyNote": "?ade talepleri 24 saat i?inde incelenir. Uygun sipari?ler teslimattan sonraki 24 saat i?inde iade edilebilir.",
+    "status": {
+      "PENDING": "?ade inceleniyor",
+      "APPROVED": "?ade onayland?",
+      "REJECTED": "?ade talebi reddedildi",
+      "REFUNDED": "?ade i?lendi"
+    }
+  },
+  "support": {
+    "title": "M??teri Deste?i",
+    "contactUs": "Destekle ?leti?ime Ge?",
+    "responseTime": "Genellikle dakikalar i?inde yan?t verir",
+    "inputPlaceholder": "Mesaj?n?z? yaz?n...",
+    "systemName": "HomeTaste Destek"
+  },
+  "location": {
+    "permTitle": "Konumunu payla?",
+    "permBody": "Bir yemek y?kledi?inde, yak?ndaki m??terilerin seni bulmas?na yard?mc? olmak i?in konumunu kullan?r?z. Tam adresini asla payla?may?z.",
+    "allow": "Konum Eri?imine ?zin Ver",
+    "skip": "?imdilik ge?",
+    "updated": "Konum g?ncellendi"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "nav": {
+    "home": "Home",
+    "browse": "Browse Cooks",
+    "orders": "My Orders",
+    "messages": "Messages",
+    "favorites": "Favorites",
+    "becomeCook": "Become a Cook",
+    "settings": "Settings",
+    "help": "Help"
+  },
+  "hero": {
+    "title": "Find the taste of home",
+    "subtitle": "Authentic meals made by home cooks from your country",
+    "searchPlaceholder": "What are you craving today?",
+    "cta": "Explore Dishes"
+  },
+  "auth": {
+    "loginTitle": "Welcome back",
+    "signupTitle": "Create your account",
+    "email": "Email address",
+    "password": "Password",
+    "name": "Full name"
+  },
+  "btn": {
+    "viewProfile": "View Profile",
+    "orderNow": "Order Now",
+    "placeOrder": "Place Order"
+  },
+  "chat": {
+    "title": "Messages",
+    "placeholder": "Type a message...",
+    "online": "Online",
+    "offline": "Offline",
+    "quick1": "Are you available now?",
+    "quick2": "How long will it take?",
+    "quick3": "Can you make it less spicy?",
+    "quick4": "I am at the door",
+    "quick5": "Thank you!"
+  },
+  "welcome": {
+    "title": "Welcome to HomeTaste",
+    "subtitle": "First, tell us where you are",
+    "countryPrompt": "Which country are you in right now?",
+    "cityPrompt": "Which city?",
+    "cuisinePrompt": "What cuisine are you craving today?",
+    "cta": "Find My Food",
+    "skip": "Browse all"
+  },
+  "become": {
+    "title": "Start Cooking on HomeTaste"
+  },
+  "dish": {
+    "addToCart": "Add to Cart",
+    "ingredients": "Ingredients",
+    "spiceLevel": "Spice Level",
+    "prepTime": "Prep Time",
+    "sauces": "Available Sauces",
+    "drinks": "Available Drinks",
+    "verifiedPhoto": "Live Verified Photo",
+    "verified": "Verified",
+    "instructions": "Special Instructions",
+    "instructionsPlaceholder": "Any special requests?"
+  },
+  "cart": {
+    "title": "Your Cart",
+    "empty": "Your cart is empty",
+    "subtotal": "Subtotal",
+    "deliveryFee": "Delivery Fee",
+    "serviceFee": "Service Fee",
+    "total": "Total",
+    "checkout": "Checkout",
+    "promo": "Promo code"
+  },
+  "checkout": {
+    "title": "Complete Your Order",
+    "address": "Delivery Address",
+    "payment": "Payment Method",
+    "note": "Note to Cook",
+    "notePlaceholder": "Any special requests?"
+  },
+  "order": {
+    "requestRefund": "Request a Refund",
+    "tracking": {
+      "placed": "Order Placed",
+      "accepted": "Cook Accepted",
+      "preparing": "Preparing",
+      "ready": "Ready for Pickup",
+      "courier": "Courier Assigned",
+      "pickedUp": "Picked Up",
+      "onTheWay": "On the Way",
+      "delivered": "Delivered"
+    }
+  },
+  "cook": {
+    "orders": "Orders",
+    "rating": "Rating",
+    "prepTime": "Prep Time",
+    "availability": "Available",
+    "verified": "Verified",
+    "responseTime": "Response Time",
+    "repeatCustomers": "Repeat Customers",
+    "specialties": "Specialties",
+    "gallery": "Food Gallery",
+    "menu": "Menu",
+    "reviews": "Reviews"
+  },
+  "rating": {
+    "food": "Food Quality",
+    "speed": "Speed",
+    "packaging": "Packaging",
+    "communication": "Communication"
+  },
+  "form": {
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "countryOrigin": "Your Home Country",
+    "city": "City You Live In",
+    "bio": "About You",
+    "bioPlaceholder": "Tell customers about yourself and your cooking...",
+    "dishes": "What dishes do you cook?",
+    "availability": "Availability Hours",
+    "prepTime": "Average Prep Time",
+    "photo": "Your Profile Photo",
+    "submitCook": "Start Cooking Now"
+  },
+  "photo": {
+    "camera": "Take Photo (Verified)",
+    "gallery": "Upload from Gallery",
+    "verifiedHint": "Photos taken with your camera get a Verified badge"
+  },
+  "toast": {
+    "addedCart": "Added to cart!",
+    "removedCart": "Removed from cart",
+    "orderPlaced": "Order placed successfully!",
+    "saved": "Saved successfully",
+    "error": "Something went wrong",
+    "favoriteAdded": "Added to favorites",
+    "favoriteRemoved": "Removed from favorites"
+  },
+  "common": {
+    "loading": "Loading...",
+    "noResults": "No results found",
+    "min": "min",
+    "reviews": "reviews"
+  },
+  "home": {
+    "featuredCooks": "Featured Cooks",
+    "popularDishes": "Popular Dishes",
+    "recentlyViewed": "Recently Viewed",
+    "nearbyCooks": "Nearby Cooks",
+    "seeAll": "See All",
+    "searchPlaceholder": "What are you craving today?",
+    "goodMorning": "Good morning",
+    "goodAfternoon": "Good afternoon",
+    "goodEvening": "Good evening"
+  },
+  "browse": {
+    "dishes": "Dishes",
+    "cooks": "Cooks",
+    "filters": "Filters",
+    "resetFilters": "Reset all",
+    "applyFilters": "Apply Filters",
+    "activeFilters": "{{count}} filters active",
+    "sortBy": "Sort by",
+    "cuisine": "Cuisine",
+    "priceRange": "Price Range",
+    "minRating": "Minimum Rating",
+    "maxPrepTime": "Max Prep Time",
+    "availableNow": "Available Now",
+    "halalOnly": "Halal Only",
+    "vegan": "Vegan",
+    "spicy": "Spicy",
+    "prepTimeMin": "{{count}} min"
+  },
+  "empty": {
+    "dishesTitle": "No dishes yet",
+    "dishesSubtitle": "Check back soon for new listings",
+    "cooksTitle": "No cooks found",
+    "cooksSubtitle": "Try adjusting your filters",
+    "searchTitle": "Nothing found",
+    "searchSubtitle": "Try different keywords or filters",
+    "clearSearch": "Clear search"
+  },
+  "refund": {
+    "title": "Request a Refund",
+    "subtitle": "Tell us what went wrong",
+    "reason": {
+      "notDelivered": "Order was not delivered",
+      "wrongItems": "I received wrong items",
+      "foodQuality": "Food quality issue",
+      "cookCancelled": "Cook cancelled my order",
+      "other": "Other reason"
+    },
+    "descriptionPlaceholder": "Please describe the issue in detail",
+    "submit": "Submit Refund Request",
+    "policyNote": "Refunds are reviewed within 24 hours. Eligible orders can be refunded within 24 hours of delivery.",
+    "status": {
+      "PENDING": "Refund under review",
+      "APPROVED": "Refund approved",
+      "REJECTED": "Refund request rejected",
+      "REFUNDED": "Refund processed"
+    }
+  },
+  "support": {
+    "title": "Customer Support",
+    "contactUs": "Contact Support",
+    "responseTime": "Usually replies in minutes",
+    "inputPlaceholder": "Type your message...",
+    "systemName": "HomeTaste Support"
+  },
+  "location": {
+    "permTitle": "Share your location",
+    "permBody": "When you upload a dish, we use your location to help nearby customers find your cooking. We never share your exact address.",
+    "allow": "Allow Location Access",
+    "skip": "Skip for now",
+    "updated": "Location updated"
+  }
+}

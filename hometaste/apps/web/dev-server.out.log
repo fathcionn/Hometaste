@@ -1,0 +1,21 @@
+
+> @hometaste/web@0.0.0 dev C:\Users\Ahmed\OneDrive\Desktop\hometaste\h\HomeTaste-main\hometaste\apps\web
+> next dev --port 3000
+
+  ▲ Next.js 14.2.33
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.6s
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 3.2s (501 modules)
+ GET /en 200 in 3848ms
+ GET /en 200 in 85ms
+ GET /en 200 in 90ms
+ GET /en 200 in 77ms
+ ○ Compiling / ...
+ ✓ Compiled / in 835ms (496 modules)
+ GET /en 200 in 95ms
+ ✓ Compiled /favicon.ico in 366ms (301 modules)
+ GET /favicon.ico 200 in 451ms
+[?25h

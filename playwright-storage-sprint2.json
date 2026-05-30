@@ -1,0 +1,34 @@
+{
+  "cookies": [],
+  "origins": [
+    {
+      "origin": "http://127.0.0.1:3000",
+      "localStorage": [
+        {
+          "name": "hometaste_token",
+          "value": "ses_e80f70e0b6b15480"
+        },
+        {
+          "name": "ht_visited",
+          "value": "yes"
+        },
+        {
+          "name": "hometaste_welcome_done",
+          "value": "yes"
+        },
+        {
+          "name": "ht_lang",
+          "value": "en"
+        },
+        {
+          "name": "ht_theme",
+          "value": "light"
+        },
+        {
+          "name": "hometaste_location",
+          "value": "Istanbul, Turkey"
+        }
+      ]
+    }
+  ]
+}

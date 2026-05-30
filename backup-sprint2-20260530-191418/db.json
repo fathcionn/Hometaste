@@ -1,0 +1,364 @@
+{
+  "users": [
+    {
+      "id": "usr_owner",
+      "name": "Shewharth",
+      "email": "shewharth@hometaste.local",
+      "passwordHash": "b0b22c840a771fb95b8813e01e24ced5:ae342f640cad063b5bef620c20e9cfd85298a7bdf35e5eedc7ca962cf8900647a8c31d24f6a68df69bafd34e5109c3e32fc9d578938d47968c59e248c62a9d09",
+      "phone": "+90 555 000 0000",
+      "role": "admin",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "currency": "TRY",
+      "avatar": "",
+      "addresses": [],
+      "createdAt": "2026-05-27T23:51:13.399Z"
+    },
+    {
+      "id": "usr_cook_1",
+      "name": "Mona Hassan",
+      "email": "mona@hometaste.local",
+      "passwordHash": "e61051a003f3c5d876ed1b5103b8897b:5569bef5178d48fd8d6f5ed05464851de889079f16fbffd73d64240fc67ef52159962fa9b875c64e9162cb51bb6736fd9e32aefab8fdf3e0de0f0e2dc80addfe",
+      "phone": "+90 555 123 4567",
+      "role": "cook",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "currency": "TRY",
+      "avatar": "",
+      "addresses": [],
+      "createdAt": "2026-05-27T23:51:13.445Z"
+    },
+    {
+      "id": "usr_customer_1",
+      "name": "Alex Johnson",
+      "email": "customer@hometaste.local",
+      "passwordHash": "12a3e0514de49265c6175364612603c4:641be111a1745d15d2377b12c61b5003fe3a8ca6157d271edc79c60f77883e8d1a03c370e04cc738e14c53bea50f0cce2f30d19217d6db0c40d279c983a3939d",
+      "phone": "+90 555 111 2222",
+      "role": "customer",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "currency": "TRY",
+      "avatar": "",
+      "addresses": [],
+      "createdAt": "2026-05-27T23:51:13.491Z"
+    }
+  ],
+  "cooks": [
+    {
+      "id": "cook_1",
+      "userId": "usr_cook_1",
+      "name": "Mona Hassan",
+      "avatar": "",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "cuisineSpecialty": "Egyptian Home Kitchen",
+      "bio": "Family recipes, daily batches, warm portions.",
+      "availability": "Today 6 PM to 10 PM",
+      "phone": "+90 555 123 4567",
+      "approved": true,
+      "verificationStatus": "approved",
+      "createdAt": "2026-05-27T23:51:13.491Z",
+      "status": "approved"
+    },
+    {
+      "id": "cook_2",
+      "userId": null,
+      "name": "Aylin Demir",
+      "avatar": "",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "cuisineSpecialty": "Turkish Classics",
+      "bio": "Stuffed vegetables, soups, and trays for families.",
+      "availability": "Weekdays 12 PM to 8 PM",
+      "phone": "+90 555 123 4567",
+      "approved": true,
+      "verificationStatus": "approved",
+      "createdAt": "2026-05-27T23:51:13.491Z",
+      "status": "approved"
+    },
+    {
+      "id": "cook_3",
+      "userId": null,
+      "name": "Ravi Patel",
+      "avatar": "",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "cuisineSpecialty": "Indian Comfort Food",
+      "bio": "Fresh curries, biryani, dal, and homemade chutneys.",
+      "availability": "Fri to Sun 5 PM to 11 PM",
+      "phone": "+90 555 123 4567",
+      "approved": true,
+      "verificationStatus": "approved",
+      "createdAt": "2026-05-27T23:51:13.491Z",
+      "status": "approved"
+    }
+  ],
+  "dishes": [
+    {
+      "id": "dish_1",
+      "cookId": "cook_1",
+      "name": "Koshari Bowl",
+      "cuisine": "Egyptian",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "price": 200,
+      "currency": "TRY",
+      "prepTime": "35 min",
+      "availability": "Today 6 PM to 10 PM",
+      "description": "Rice, lentils, chickpeas, crispy onions, tomato sauce.",
+      "ingredients": [],
+      "allergens": [],
+      "sauces": [],
+      "drinks": [],
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=900&q=80",
+      "cameraVerified": false,
+      "status": "approved",
+      "createdAt": "2026-05-30T15:34:06.676Z"
+    },
+    {
+      "id": "dish_2",
+      "cookId": "cook_2",
+      "name": "Dolma Plate",
+      "cuisine": "turkish",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "price": 240,
+      "currency": "TRY",
+      "prepTime": "45 min",
+      "availability": "Weekdays 12 PM to 8 PM",
+      "description": "Stuffed peppers and vine leaves with yogurt.",
+      "ingredients": [],
+      "allergens": [],
+      "sauces": [],
+      "drinks": [],
+      "image": "https://images.unsplash.com/photo-1559847844-5315695dadae?w=900&q=80",
+      "cameraVerified": false,
+      "status": "approved",
+      "createdAt": "2026-05-30T15:34:06.676Z"
+    },
+    {
+      "id": "dish_3",
+      "cookId": "cook_3",
+      "name": "Chicken Biryani",
+      "cuisine": "Indian",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "price": 285,
+      "currency": "TRY",
+      "prepTime": "50 min",
+      "availability": "Fri to Sun 5 PM to 11 PM",
+      "description": "Layered rice, spices, chicken, raita, and chutney.",
+      "ingredients": [],
+      "allergens": [],
+      "sauces": [],
+      "drinks": [],
+      "image": "https://images.unsplash.com/photo-1563379091339-03246963d7d3?w=900&q=80",
+      "cameraVerified": false,
+      "status": "approved",
+      "createdAt": "2026-05-30T15:34:06.676Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_1",
+      "customerId": "usr_customer_1",
+      "cookId": "cook_1",
+      "items": [
+        {
+          "dishId": "dish_1",
+          "quantity": 1,
+          "name": "Koshari Bowl",
+          "unitPrice": 200,
+          "extras": []
+        }
+      ],
+      "subtotal": 200,
+      "deliveryFee": 30,
+      "total": 245,
+      "currency": "TRY",
+      "fulfillmentType": "delivery",
+      "address": "Nisantasi, Istanbul",
+      "phone": "+90 555 111 2222",
+      "paymentMethod": "cash",
+      "paymentStatus": "unpaid",
+      "orderStatus": "cancelled",
+      "createdAt": "2026-05-27T23:51:13.491Z",
+      "updatedAt": "2026-05-27T23:51:49.184Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg_1",
+      "conversationId": "order_ord_1",
+      "senderId": "usr_customer_1",
+      "receiverId": "usr_cook_1",
+      "orderId": "ord_1",
+      "text": "Can you make it medium spicy?",
+      "createdAt": "2026-05-27T23:51:13.491Z",
+      "read": false
+    },
+    {
+      "id": "msg_2",
+      "conversationId": "order_ord_1",
+      "senderId": "usr_cook_1",
+      "receiverId": "usr_customer_1",
+      "orderId": "ord_1",
+      "text": "Yes, medium spicy is perfect.",
+      "createdAt": "2026-05-27T23:51:13.491Z",
+      "read": false
+    }
+  ],
+  "reviews": [],
+  "cookApplications": [],
+  "reports": [],
+  "settings": [
+    {
+      "userId": "usr_owner",
+      "language": "en",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "currency": "TRY",
+      "darkMode": false,
+      "notifications": true,
+      "phone": "+90 555 000 0000",
+      "addresses": []
+    },
+    {
+      "userId": "usr_cook_1",
+      "language": "en",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "currency": "TRY",
+      "darkMode": false,
+      "notifications": true,
+      "phone": "+90 555 123 4567",
+      "addresses": []
+    },
+    {
+      "userId": "usr_customer_1",
+      "language": "en",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "currency": "TRY",
+      "darkMode": false,
+      "notifications": true,
+      "phone": "+90 555 111 2222",
+      "addresses": []
+    }
+  ],
+  "notifications": [
+    {
+      "id": "not_fd0597073f0419aa",
+      "userId": "usr_customer_1",
+      "text": "Order ord_1 is now cancelled.",
+      "createdAt": "2026-05-27T23:51:49.184Z",
+      "read": false
+    }
+  ],
+  "sessions": {
+    "ses_1fd993d9e72aa325": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-27T23:56:27.044Z"
+    },
+    "ses_eda4241f12c698fe": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-28T20:45:02.307Z"
+    },
+    "ses_c5f7395057fff5fd": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-29T16:42:01.226Z"
+    },
+    "ses_6cdc481d315b8ce2": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-29T16:52:41.040Z"
+    },
+    "ses_7feb047f5c60a661": {
+      "userId": "usr_owner",
+      "createdAt": "2026-05-29T17:40:49.285Z"
+    },
+    "ses_7cd0726368ea635d": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:15:13.993Z"
+    },
+    "ses_aafbb641c3e4c7f2": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:16:06.947Z"
+    },
+    "ses_c5da5a904882be0e": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:16:32.878Z"
+    },
+    "ses_459be1db08a031c7": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:17:06.375Z"
+    },
+    "ses_5e92511349b66948": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:17:52.977Z"
+    },
+    "ses_4ed5379a691211dd": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:18:51.731Z"
+    },
+    "ses_e0cc86ba1f1125f8": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:19:52.343Z"
+    },
+    "ses_94458625eac62d62": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:20:52.364Z"
+    },
+    "ses_a0334708c6597c08": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:21:25.045Z"
+    },
+    "ses_ed430646b49037e1": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:22:24.439Z"
+    },
+    "ses_522aa2dd07ae79d0": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:24:08.369Z"
+    },
+    "ses_669772deff3e1952": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:25:01.370Z"
+    },
+    "ses_6ea38b27bfff6cd1": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:25:19.705Z"
+    },
+    "ses_ecd6850f963dfeb1": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:25:47.230Z"
+    },
+    "ses_f65b4c986a33b3b7": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:26:46.193Z"
+    },
+    "ses_50d4f83648160e6c": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:28:02.345Z"
+    },
+    "ses_dd3c1ee7aab55d11": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:54:57.155Z"
+    },
+    "ses_783cec99528729ad": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:55:07.808Z"
+    },
+    "ses_7d0ff5dbe39a5896": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:56:01.990Z"
+    },
+    "ses_4bffebccfc43f268": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:58:30.036Z"
+    },
+    "ses_badd575300a64258": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:58:58.694Z"
+    }
+  }
+}

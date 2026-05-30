@@ -1,0 +1,27 @@
+{
+  "name": "@hometaste/admin",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3001",
+    "build": "next build",
+    "lint": "eslint .",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hometaste/types": "workspace:^",
+    "@tanstack/react-query": "^5.90.12",
+    "next": "14.2.33",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "recharts": "^3.8.1",
+    "zustand": "^4.5.7"
+  },
+  "devDependencies": {
+    "@hometaste/config": "workspace:*",
+    "@types/node": "^20.19.25",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "typescript": "5.9.2"
+  }
+}

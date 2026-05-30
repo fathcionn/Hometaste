@@ -1,0 +1,220 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "browse": "تصفح الطهاة",
+    "orders": "طلباتي",
+    "messages": "الرسائل",
+    "favorites": "المفضلة",
+    "becomeCook": "انضم كطاهٍ",
+    "settings": "الإعدادات",
+    "help": "المساعدة"
+  },
+  "hero": {
+    "title": "اكتشف طعم البيت",
+    "subtitle": "وجبات أصيلة يصنعها طهاة من بلدك",
+    "searchPlaceholder": "ماذا تشتهي اليوم؟",
+    "cta": "استعرض الأطباق"
+  },
+  "auth": {
+    "loginTitle": "أهلاً بعودتك",
+    "signupTitle": "إنشاء حساب جديد",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "name": "الاسم الكامل"
+  },
+  "btn": {
+    "viewProfile": "عرض الملف",
+    "orderNow": "اطلب الآن",
+    "placeOrder": "تأكيد الطلب"
+  },
+  "chat": {
+    "title": "الرسائل",
+    "placeholder": "اكتب رسالة...",
+    "online": "متصل",
+    "offline": "غير متصل",
+    "quick1": "هل أنت متاح الآن؟",
+    "quick2": "كم يستغرق التحضير؟",
+    "quick3": "هل يمكن تقليل الحرارة؟",
+    "quick4": "أنا عند الباب",
+    "quick5": "شكراً لك!"
+  },
+  "welcome": {
+    "title": "أهلاً بك في HomeTaste",
+    "subtitle": "أخبرنا أين أنت الآن",
+    "countryPrompt": "في أي دولة أنت حالياً؟",
+    "cityPrompt": "في أي مدينة؟",
+    "cuisinePrompt": "ما المطبخ الذي تشتهيه اليوم؟",
+    "cta": "ابحث عن طعامي",
+    "skip": "تصفح الكل"
+  },
+  "become": {
+    "title": "انضم كطاهٍ في HomeTaste"
+  },
+  "dish": {
+    "addToCart": "أضف للسلة",
+    "ingredients": "المكونات",
+    "spiceLevel": "مستوى الحرارة",
+    "prepTime": "وقت التحضير",
+    "sauces": "الصوصات المتاحة",
+    "drinks": "المشروبات المتاحة",
+    "verifiedPhoto": "صورة موثّقة مباشرة",
+    "verified": "موثّق",
+    "instructions": "تعليمات خاصة",
+    "instructionsPlaceholder": "أي طلبات خاصة؟"
+  },
+  "cart": {
+    "title": "سلة الطلبات",
+    "empty": "السلة فارغة",
+    "subtotal": "المجموع الفرعي",
+    "deliveryFee": "رسوم التوصيل",
+    "serviceFee": "رسوم الخدمة",
+    "total": "الإجمالي",
+    "checkout": "إتمام الشراء",
+    "promo": "كود الخصم"
+  },
+  "checkout": {
+    "title": "إتمام الطلب",
+    "address": "عنوان التوصيل",
+    "payment": "طريقة الدفع",
+    "note": "ملاحظة للطاهي",
+    "notePlaceholder": "أي طلبات خاصة؟"
+  },
+  "order": {
+    "requestRefund": "??? ???????",
+    "tracking": {
+      "placed": "تم تقديم الطلب",
+      "accepted": "قبل الطاهي الطلب",
+      "preparing": "جاري التحضير",
+      "ready": "جاهز للاستلام",
+      "courier": "تم تعيين المندوب",
+      "pickedUp": "تم الاستلام",
+      "onTheWay": "في الطريق إليك",
+      "delivered": "تم التوصيل"
+    }
+  },
+  "cook": {
+    "orders": "الطلبات",
+    "rating": "التقييم",
+    "prepTime": "وقت التحضير",
+    "availability": "متاح",
+    "verified": "موثّق",
+    "responseTime": "وقت الاستجابة",
+    "repeatCustomers": "العملاء المتكررون",
+    "specialties": "التخصصات",
+    "gallery": "معرض الأطباق",
+    "menu": "القائمة",
+    "reviews": "التقييمات"
+  },
+  "rating": {
+    "food": "جودة الطعام",
+    "speed": "السرعة",
+    "packaging": "التغليف",
+    "communication": "التواصل"
+  },
+  "form": {
+    "fullName": "الاسم الكامل",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "countryOrigin": "بلدك الأصلي",
+    "city": "المدينة التي تعيش فيها",
+    "bio": "عن نفسك",
+    "bioPlaceholder": "أخبر العملاء عن نفسك وعن طبخك...",
+    "dishes": "ما الأطباق التي تطهوها؟",
+    "availability": "أوقات التواجد",
+    "prepTime": "متوسط وقت التحضير",
+    "photo": "صورة ملفك الشخصي",
+    "submitCook": "ابدأ الطهي الآن"
+  },
+  "photo": {
+    "camera": "التقاط صورة (موثّقة)",
+    "gallery": "رفع من المعرض",
+    "verifiedHint": "الصور الملتقطة من الكاميرا تحصل على شارة التوثيق"
+  },
+  "toast": {
+    "addedCart": "تمت الإضافة للسلة!",
+    "removedCart": "تمت الإزالة من السلة",
+    "orderPlaced": "تم تقديم طلبك بنجاح!",
+    "saved": "تم الحفظ بنجاح",
+    "error": "حدث خطأ ما",
+    "favoriteAdded": "أضيف إلى المفضلة",
+    "favoriteRemoved": "أُزيل من المفضلة"
+  },
+  "common": {
+    "loading": "جارٍ التحميل...",
+    "noResults": "لا توجد نتائج",
+    "min": "دقيقة",
+    "reviews": "تقييم"
+  },
+  "home": {
+    "featuredCooks": "طهاة مميزون",
+    "popularDishes": "أطباق شائعة",
+    "recentlyViewed": "شوهد مؤخراً",
+    "nearbyCooks": "طهاة قريبون",
+    "seeAll": "عرض الكل",
+    "searchPlaceholder": "ماذا تشتهي اليوم؟",
+    "goodMorning": "صباح الخير",
+    "goodAfternoon": "مساء الخير",
+    "goodEvening": "مساء الخير"
+  },
+  "browse": {
+    "dishes": "الأطباق",
+    "cooks": "الطهاة",
+    "filters": "الفلاتر",
+    "resetFilters": "إعادة ضبط الكل",
+    "applyFilters": "تطبيق الفلاتر",
+    "activeFilters": "{{count}} فلاتر مفعلة",
+    "sortBy": "ترتيب حسب",
+    "cuisine": "المطبخ",
+    "priceRange": "نطاق السعر",
+    "minRating": "أدنى تقييم",
+    "maxPrepTime": "أقصى وقت تحضير",
+    "availableNow": "متاح الآن",
+    "halalOnly": "حلال فقط",
+    "vegan": "نباتي",
+    "spicy": "حار",
+    "prepTimeMin": "{{count}} دقيقة"
+  },
+  "empty": {
+    "dishesTitle": "لا توجد أطباق بعد",
+    "dishesSubtitle": "تحقق قريباً من الإضافات الجديدة",
+    "cooksTitle": "لم يتم العثور على طهاة",
+    "cooksSubtitle": "جرّب تعديل الفلاتر",
+    "searchTitle": "لا توجد نتائج",
+    "searchSubtitle": "جرّب كلمات أو فلاتر مختلفة",
+    "clearSearch": "مسح البحث"
+  },
+  "refund": {
+    "title": "??? ???????",
+    "subtitle": "?????? ?? ???????",
+    "reason": {
+      "notDelivered": "?? ??? ????? ?????",
+      "wrongItems": "?????? ????? ?????",
+      "foodQuality": "????? ?? ???? ??????",
+      "cookCancelled": "???? ?????? ????",
+      "other": "??? ???"
+    },
+    "descriptionPlaceholder": "???? ??? ??????? ????????",
+    "submit": "????? ??? ?????????",
+    "policyNote": "??? ?????? ????? ????????? ???? 24 ????. ???? ??????? ??????? ??????? ???? 24 ???? ?? ???????.",
+    "status": {
+      "PENDING": "??? ????????? ??? ????????",
+      "APPROVED": "??? ???????? ??? ?????????",
+      "REJECTED": "?? ??? ??? ?????????",
+      "REFUNDED": "??? ?????? ?????????"
+    }
+  },
+  "support": {
+    "title": "??? ???????",
+    "contactUs": "????? ?? ?????",
+    "responseTime": "???? ??? ???? ?????",
+    "inputPlaceholder": "???? ??????...",
+    "systemName": "??? HomeTaste"
+  },
+  "location": {
+    "permTitle": "???? ?????",
+    "permBody": "??? ??? ???? ?????? ????? ??????? ??????? ???????? ?? ?????? ??? ????. ?? ????? ?????? ?????? ?????.",
+    "allow": "?????? ??????? ??????",
+    "skip": "???? ????",
+    "updated": "?? ????? ??????"
+  }
+}

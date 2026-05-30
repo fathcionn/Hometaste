@@ -1,0 +1,78 @@
+{
+  "expo": {
+    "name": "HomeTaste",
+    "slug": "hometaste",
+    "scheme": "hometaste",
+    "version": "1.0.0",
+    "sdkVersion": "53.0.0",
+    "newArchEnabled": true,
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#101012"
+    },
+    "ios": {
+      "bundleIdentifier": "com.hometaste.app",
+      "buildNumber": "1",
+      "supportsTablet": false,
+      "privacyManifests": {
+        "NSPrivacyAccessedAPITypes": []
+      },
+      "infoPlist": {
+        "NSCameraUsageDescription": "Take verified photos of your dishes",
+        "NSPhotoLibraryUsageDescription": "Upload photos of your dishes",
+        "NSLocationWhenInUseUsageDescription": "Show your location for delivery",
+        "NSMicrophoneUsageDescription": "Required for camera access"
+      }
+    },
+    "android": {
+      "package": "com.hometaste.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#101012"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-camera",
+      "expo-image-picker",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "HomeTaste uses your location to show your neighborhood to customers and improve delivery accuracy.",
+          "locationWhenInUsePermission": "HomeTaste uses your location when uploading dishes to help customers find local home cooks."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#f97316"
+        }
+      ],
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "merchant.com.hometaste.app"
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "extra": {
+      "privacyPolicyUrl": "https://hometaste.app/en/privacy"
+    }
+  }
+}

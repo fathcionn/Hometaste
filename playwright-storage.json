@@ -1,0 +1,32 @@
+{
+    "cookies":  [
+
+                ],
+    "origins":  [
+                    {
+                        "localStorage":  [
+                                             {
+                                                 "value":  "ses_c5f7395057fff5fd",
+                                                 "name":  "hometaste_token"
+                                             },
+                                             {
+                                                 "value":  "light",
+                                                 "name":  "ht_theme"
+                                             },
+                                             {
+                                                 "value":  "yes",
+                                                 "name":  "ht_visited"
+                                             },
+                                             {
+                                                 "value":  "yes",
+                                                 "name":  "hometaste_welcome_done"
+                                             },
+                                             {
+                                                 "value":  "en",
+                                                 "name":  "ht_lang"
+                                             }
+                                         ],
+                        "origin":  "http://localhost:3000"
+                    }
+                ]
+}

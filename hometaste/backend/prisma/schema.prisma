@@ -1,0 +1,368 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                String         @id @default(cuid())
+  email             String         @unique
+  passwordHash      String
+  name              String
+  phone             String?
+  avatarUrl         String?
+  avatarVerified    Boolean        @default(false)
+  role              Role           @default(CUSTOMER)
+  pushToken         String?
+  preferredLang     String         @default("en")
+  preferredCountry  String?
+  preferredCurrency String?
+  refreshTokens     RefreshToken[]
+  cookProfile       Cook?
+  orders            Order[]        @relation("CustomerOrders")
+  sentMessages      Message[]      @relation("SentMessages")
+  notifications     Notification[]
+  reviews           Review[]
+  refundRequests    RefundRequest[]
+  favorites         Favorite[]
+  supportTickets    SupportTicket[]
+  createdAt         DateTime       @default(now())
+  updatedAt         DateTime       @updatedAt
+}
+
+enum Role {
+  CUSTOMER
+  COOK
+  ADMIN
+}
+
+model RefreshToken {
+  id        String   @id @default(cuid())
+  token     String   @unique
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model Cook {
+  id                 String   @id @default(cuid())
+  userId             String   @unique
+  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  bio                String?
+  originCountry      String
+  currentCity        String
+  cuisines           String[]
+  specialties        String[]
+  availability       String?
+  prepTime           String?
+  isVerified         Boolean  @default(false)
+  isActive           Boolean  @default(true)
+  totalOrders        Int      @default(0)
+  repeatCustomerRate Float    @default(0)
+  avgRatingOverall   Float    @default(0)
+  avgRatingFood      Float    @default(0)
+  avgRatingSpeed     Float    @default(0)
+  avgRatingPackaging Float    @default(0)
+  avgRatingComm      Float    @default(0)
+  locationLat        Float?
+  locationLng        Float?
+  locationCity       String?
+  locationArea       String?
+  dishes             Dish[]
+  orders             Order[]  @relation("CookOrders")
+  reviews            Review[]
+  favorites          Favorite[]
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  @@index([currentCity])
+  @@index([isActive, isVerified])
+}
+
+model SupportTicket {
+  id        String           @id @default(cuid())
+  userId    String
+  status    TicketStatus     @default(OPEN)
+  createdAt DateTime         @default(now())
+  updatedAt DateTime         @updatedAt
+  messages  SupportMessage[]
+  user      User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([status])
+}
+
+model SupportMessage {
+  id         String        @id @default(cuid())
+  ticketId   String
+  senderId   String
+  senderName String
+  content    String
+  createdAt  DateTime      @default(now())
+  ticket     SupportTicket @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+
+  @@index([ticketId])
+}
+
+enum TicketStatus {
+  OPEN
+  WAITING_FOR_AGENT
+  AGENT_JOINED
+  RESOLVED
+  CLOSED
+}
+
+model Dish {
+  id            String      @id @default(cuid())
+  cookId        String
+  cook          Cook        @relation(fields: [cookId], references: [id], onDelete: Cascade)
+  name          String
+  description   String?
+  imageUrl      String?
+  imageVerified Boolean     @default(false)
+  cuisine       String
+  ingredients   String[]
+  spiceLevel    SpiceLevel  @default(NONE)
+  prepTime      Int
+  basePrice     Float
+  isAvailable   Boolean     @default(true)
+  isFeatured    Boolean     @default(false)
+  tags          String[]
+  sauces        Extra[]     @relation("DishSauces")
+  drinks        Extra[]     @relation("DishDrinks")
+  orderItems    OrderItem[]
+  favorites     Favorite[]
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+
+  @@index([cookId])
+  @@index([cuisine])
+  @@index([isAvailable, isFeatured])
+}
+
+enum SpiceLevel {
+  NONE
+  MILD
+  MEDIUM
+  HOT
+  VERY_HOT
+}
+
+model Extra {
+  id          String  @id @default(cuid())
+  name        String
+  price       Float
+  isAvailable Boolean @default(true)
+  dishAsSauce Dish?   @relation("DishSauces", fields: [dishSauceId], references: [id])
+  dishSauceId String?
+  dishAsDrink Dish?   @relation("DishDrinks", fields: [dishDrinkId], references: [id])
+  dishDrinkId String?
+
+  @@index([dishSauceId])
+  @@index([dishDrinkId])
+}
+
+model Order {
+  id              String               @id @default(cuid())
+  customerId      String
+  customer        User                 @relation("CustomerOrders", fields: [customerId], references: [id])
+  cookId          String
+  cook            Cook                 @relation("CookOrders", fields: [cookId], references: [id])
+  items           OrderItem[]
+  status          OrderStatus          @default(PLACED)
+  totalAmount     Float
+  deliveryFee     Float
+  serviceFee      Float
+  currency        String               @default("TRY")
+  deliveryAddress String
+  customerNote    String?
+  cancelReason    String?
+  paymentMethod   String
+  paymentStatus   PaymentStatus        @default(PENDING)
+  trackingLat     Float?
+  trackingLng     Float?
+  messages        Message[]
+  review          Review?
+  refundRequests  RefundRequest[]
+  statusHistory   OrderStatusHistory[]
+  createdAt       DateTime             @default(now())
+  updatedAt       DateTime             @updatedAt
+
+  @@index([customerId])
+  @@index([cookId])
+  @@index([status])
+  @@index([paymentStatus])
+}
+
+enum OrderStatus {
+  PLACED
+  ACCEPTED
+  PREPARING
+  READY
+  COURIER_ASSIGNED
+  PICKED_UP
+  ON_THE_WAY
+  DELIVERED
+  CANCELLED
+}
+
+enum PaymentStatus {
+  PENDING
+  PAID
+  REFUNDED
+  FAILED
+}
+
+model RefundRequest {
+  id          String       @id @default(cuid())
+  orderId     String
+  customerId  String
+  reason      RefundReason
+  description String?
+  status      RefundStatus @default(PENDING)
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  order       Order        @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  customer    User         @relation(fields: [customerId], references: [id], onDelete: Cascade)
+
+  @@index([orderId])
+  @@index([customerId])
+  @@index([status])
+}
+
+enum RefundReason {
+  NOT_DELIVERED
+  WRONG_ITEMS
+  FOOD_QUALITY
+  COOK_CANCELLED
+  OTHER
+}
+
+enum RefundStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  REFUNDED
+}
+
+model OrderStatusHistory {
+  id        String      @id @default(cuid())
+  orderId   String
+  order     Order       @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  status    OrderStatus
+  note      String?
+  createdAt DateTime    @default(now())
+
+  @@index([orderId])
+}
+
+model OrderItem {
+  id        String @id @default(cuid())
+  orderId   String
+  order     Order  @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  dishId    String
+  dish      Dish   @relation(fields: [dishId], references: [id])
+  quantity  Int
+  unitPrice Float
+  extras    Json
+  note      String?
+
+  @@index([orderId])
+  @@index([dishId])
+}
+
+model Message {
+  id        String      @id @default(cuid())
+  orderId   String
+  order     Order       @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  senderId  String
+  sender    User        @relation("SentMessages", fields: [senderId], references: [id])
+  content   String
+  type      MessageType @default(TEXT)
+  readAt    DateTime?
+  createdAt DateTime    @default(now())
+
+  @@index([orderId])
+  @@index([senderId])
+}
+
+enum MessageType {
+  TEXT
+  IMAGE
+  QUICK_REPLY
+  SYSTEM
+}
+
+model Review {
+  id              String   @id @default(cuid())
+  orderId         String   @unique
+  order           Order    @relation(fields: [orderId], references: [id])
+  customerId      String
+  customer        User     @relation(fields: [customerId], references: [id])
+  cookId          String
+  cook            Cook     @relation(fields: [cookId], references: [id])
+  ratingOverall   Int
+  ratingFood      Int
+  ratingSpeed     Int
+  ratingPackaging Int
+  ratingComm      Int
+  comment         String?
+  photoUrl        String?
+  createdAt       DateTime @default(now())
+
+  @@index([customerId])
+  @@index([cookId])
+}
+
+model Notification {
+  id        String           @id @default(cuid())
+  userId    String
+  user      User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type      NotificationType
+  title     String
+  body      String
+  data      Json?
+  readAt    DateTime?
+  createdAt DateTime         @default(now())
+
+  @@index([userId])
+  @@index([readAt])
+}
+
+enum NotificationType {
+  ORDER_PLACED
+  ORDER_ACCEPTED
+  ORDER_PREPARING
+  ORDER_READY
+  ORDER_PICKED_UP
+  ORDER_DELIVERED
+  ORDER_CANCELLED
+  NEW_MESSAGE
+  NEW_REVIEW
+  COOK_APPROVED
+  PROMO
+}
+
+model Favorite {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  dishId    String?
+  dish      Dish?    @relation(fields: [dishId], references: [id], onDelete: Cascade)
+  cookId    String?
+  cook      Cook?    @relation(fields: [cookId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@unique([userId, dishId])
+  @@unique([userId, cookId])
+  @@index([userId])
+  @@index([dishId])
+  @@index([cookId])
+}

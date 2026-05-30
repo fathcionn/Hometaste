@@ -1,0 +1,290 @@
+{
+  "users": [
+    {
+      "id": "usr_owner",
+      "name": "Shewharth",
+      "email": "shewharth@hometaste.local",
+      "passwordHash": "b0b22c840a771fb95b8813e01e24ced5:ae342f640cad063b5bef620c20e9cfd85298a7bdf35e5eedc7ca962cf8900647a8c31d24f6a68df69bafd34e5109c3e32fc9d578938d47968c59e248c62a9d09",
+      "role": "owner",
+      "city": "Istanbul",
+      "phone": "+90 555 000 0000",
+      "createdAt": "2026-05-27T23:51:13.399Z"
+    },
+    {
+      "id": "usr_cook_1",
+      "name": "Mona Hassan",
+      "email": "mona@hometaste.local",
+      "passwordHash": "e61051a003f3c5d876ed1b5103b8897b:5569bef5178d48fd8d6f5ed05464851de889079f16fbffd73d64240fc67ef52159962fa9b875c64e9162cb51bb6736fd9e32aefab8fdf3e0de0f0e2dc80addfe",
+      "role": "cook",
+      "city": "Istanbul",
+      "phone": "+90 555 123 4567",
+      "createdAt": "2026-05-27T23:51:13.445Z"
+    },
+    {
+      "id": "usr_customer_1",
+      "name": "Demo Customer",
+      "email": "customer@hometaste.local",
+      "passwordHash": "12a3e0514de49265c6175364612603c4:641be111a1745d15d2377b12c61b5003fe3a8ca6157d271edc79c60f77883e8d1a03c370e04cc738e14c53bea50f0cce2f30d19217d6db0c40d279c983a3939d",
+      "role": "customer",
+      "city": "Istanbul",
+      "phone": "+90 555 111 2222",
+      "createdAt": "2026-05-27T23:51:13.491Z"
+    }
+  ],
+  "cooks": [
+    {
+      "id": "cook_1",
+      "userId": "usr_cook_1",
+      "name": "Mona Hassan",
+      "cuisine": "Egyptian Home Kitchen",
+      "city": "Istanbul",
+      "bio": "Family recipes, daily batches, warm portions.",
+      "verified": true,
+      "status": "approved",
+      "rating": 4.9,
+      "reviews": 183,
+      "availability": "Today 6 PM to 10 PM",
+      "responseTime": "Usually replies in 5 minutes",
+      "createdAt": "2026-05-27T23:51:13.491Z"
+    },
+    {
+      "id": "cook_2",
+      "userId": null,
+      "name": "Aylin Demir",
+      "cuisine": "Turkish Classics",
+      "city": "Kadikoy",
+      "bio": "Stuffed vegetables, soups, and trays for families.",
+      "verified": true,
+      "status": "approved",
+      "rating": 4.8,
+      "reviews": 96,
+      "availability": "Weekdays 12 PM to 8 PM",
+      "responseTime": "Usually replies in 12 minutes",
+      "createdAt": "2026-05-27T23:51:13.491Z"
+    },
+    {
+      "id": "cook_3",
+      "userId": null,
+      "name": "Ravi Patel",
+      "cuisine": "Indian Comfort Food",
+      "city": "Besiktas",
+      "bio": "Fresh curries, biryani, dal, and homemade chutneys.",
+      "verified": true,
+      "status": "approved",
+      "rating": 4.7,
+      "reviews": 74,
+      "availability": "Fri to Sun 5 PM to 11 PM",
+      "responseTime": "Usually replies in 18 minutes",
+      "createdAt": "2026-05-27T23:51:13.491Z"
+    }
+  ],
+  "dishes": [
+    {
+      "id": "dish_1",
+      "cookId": "cook_1",
+      "name": "Koshari Bowl",
+      "description": "Rice, lentils, chickpeas, crispy onions, tomato sauce.",
+      "price": 200,
+      "prepMinutes": 35,
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=900&q=80",
+      "tags": [
+        "vegan",
+        "filling"
+      ],
+      "available": true,
+      "featured": false
+    },
+    {
+      "id": "dish_2",
+      "cookId": "cook_2",
+      "name": "Dolma Plate",
+      "description": "Stuffed peppers and vine leaves with yogurt.",
+      "price": 240,
+      "prepMinutes": 45,
+      "image": "https://images.unsplash.com/photo-1559847844-5315695dadae?w=900&q=80",
+      "tags": [
+        "turkish",
+        "family"
+      ],
+      "available": true,
+      "featured": false
+    },
+    {
+      "id": "dish_3",
+      "cookId": "cook_3",
+      "name": "Chicken Biryani",
+      "description": "Layered rice, spices, chicken, raita, and chutney.",
+      "price": 285,
+      "prepMinutes": 50,
+      "image": "https://images.unsplash.com/photo-1563379091339-03246963d7d3?w=900&q=80",
+      "tags": [
+        "spicy",
+        "halal"
+      ],
+      "available": true,
+      "featured": true
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_1",
+      "customerId": "usr_customer_1",
+      "cookId": "cook_1",
+      "items": [
+        {
+          "dishId": "dish_1",
+          "name": "Koshari Bowl",
+          "qty": 1,
+          "price": 200
+        }
+      ],
+      "subtotal": 200,
+      "deliveryFee": 30,
+      "serviceFee": 15,
+      "total": 245,
+      "status": "cancelled",
+      "statusHistory": [
+        {
+          "status": "placed",
+          "byUserId": "usr_customer_1",
+          "at": "2026-05-27T23:51:13.491Z",
+          "note": "Seed order placed."
+        },
+        {
+          "status": "preparing",
+          "byUserId": "usr_cook_1",
+          "at": "2026-05-27T23:51:13.491Z",
+          "note": "Seed cook started preparing."
+        },
+        {
+          "status": "cancelled",
+          "byUserId": "usr_owner",
+          "at": "2026-05-27T23:51:49.184Z",
+          "note": ""
+        }
+      ],
+      "paymentMethod": "cash",
+      "deliveryAddress": "Nisantasi, Istanbul",
+      "notes": "Medium spicy",
+      "createdAt": "2026-05-27T23:51:13.491Z",
+      "updatedAt": "2026-05-27T23:51:49.184Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg_1",
+      "orderId": "ord_1",
+      "fromUserId": "usr_customer_1",
+      "toCookId": "cook_1",
+      "text": "Can you make it medium spicy?",
+      "createdAt": "2026-05-27T23:51:13.491Z"
+    },
+    {
+      "id": "msg_2",
+      "orderId": "ord_1",
+      "fromUserId": "usr_cook_1",
+      "toUserId": "usr_customer_1",
+      "text": "Yes, medium spicy is perfect.",
+      "createdAt": "2026-05-27T23:51:13.491Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "not_fd0597073f0419aa",
+      "userId": "usr_customer_1",
+      "text": "Order ord_1 is now cancelled.",
+      "createdAt": "2026-05-27T23:51:49.184Z",
+      "read": false
+    }
+  ],
+  "sessions": {
+    "ses_1fd993d9e72aa325": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-27T23:56:27.044Z"
+    },
+    "ses_eda4241f12c698fe": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-28T20:45:02.307Z"
+    },
+    "ses_c5f7395057fff5fd": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-29T16:42:01.226Z"
+    },
+    "ses_6cdc481d315b8ce2": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-29T16:52:41.040Z"
+    },
+    "ses_7feb047f5c60a661": {
+      "userId": "usr_owner",
+      "createdAt": "2026-05-29T17:40:49.285Z"
+    },
+    "ses_cff63b86f4abf745": {
+      "userId": "usr_owner",
+      "createdAt": "2026-05-30T15:13:32.210Z"
+    },
+    "ses_7cd0726368ea635d": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:15:13.993Z"
+    },
+    "ses_aafbb641c3e4c7f2": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:16:06.947Z"
+    },
+    "ses_c5da5a904882be0e": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:16:32.878Z"
+    },
+    "ses_459be1db08a031c7": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:17:06.375Z"
+    },
+    "ses_5e92511349b66948": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:17:52.977Z"
+    },
+    "ses_4ed5379a691211dd": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:18:51.731Z"
+    },
+    "ses_e0cc86ba1f1125f8": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:19:52.343Z"
+    },
+    "ses_94458625eac62d62": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:20:52.364Z"
+    },
+    "ses_a0334708c6597c08": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:21:25.045Z"
+    },
+    "ses_ed430646b49037e1": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:22:24.439Z"
+    },
+    "ses_522aa2dd07ae79d0": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:24:08.369Z"
+    },
+    "ses_669772deff3e1952": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:25:01.370Z"
+    },
+    "ses_6ea38b27bfff6cd1": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:25:19.705Z"
+    },
+    "ses_ecd6850f963dfeb1": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:25:47.230Z"
+    },
+    "ses_f65b4c986a33b3b7": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:26:46.193Z"
+    },
+    "ses_50d4f83648160e6c": {
+      "userId": "usr_customer_1",
+      "createdAt": "2026-05-30T15:28:02.345Z"
+    }
+  }
+}
